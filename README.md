@@ -6,6 +6,10 @@ as frontend of sorts
 
 Setup:
 
+**Requirements:**
+Microsoft .NET Framework 6.0 redistributable
+Windows 7 or later/mono compatible with .NET 6.0
+
 this program calls to fceux and the fceux folder needs to be in C:\fceux in that folder you need a roms folder where the actual roms are stored
 
 **The Roms:**
