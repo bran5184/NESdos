@@ -8,14 +8,14 @@ while (true)
     if (searchTerm == "dir")
     {
         //gets the directory listing and puts it in the filePaths Array
-        string[] filePaths = Directory.GetFiles(@"C:\fceux-2.3.0-win32\roms\");
+        string[] filePaths = Directory.GetFiles(@"C:\fceux\roms\");
         //prints out every object in the filePaths array
         Array.ForEach(filePaths, Console.WriteLine);
     }
     else
     {
         //allows user to enter filename of game if they so choose
-        string[] filePaths = Directory.GetFiles(@"C:\fceux-2.3.0-win32\roms\", searchTerm + ".nes");
+        string[] filePaths = Directory.GetFiles(@"C:\fceux\roms\", searchTerm + ".nes");
         //prints out the file path
         //puts the first file path into gameFile so it can be run
 
@@ -31,7 +31,7 @@ while (true)
             // Enter in the command line arguments, everything you would enter after the executable name itself
             start.Arguments = gameFile;
             // Enter the executable to run, including the complete path
-            start.FileName = @"C:\fceux-2.3.0-win32\fceux";
+            start.FileName = @"C:\fceux\fceux";
             // Do you want to show a console window?
             start.WindowStyle = ProcessWindowStyle.Hidden;
             start.CreateNoWindow = true;
