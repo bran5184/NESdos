@@ -5,6 +5,9 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;uh</Configurations>
+    <Version>$(VersionPrefix)</Version>
+    <AssemblyVersion></AssemblyVersion>
   </PropertyGroup>
 
 </Project>
